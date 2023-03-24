@@ -17,22 +17,22 @@
       <div class="form-card">
         <h2 class="intro">Let's get started by knowing<br> more about you.</h2>
         <div class="form">
-          <form>
+          <form action="/next.html" method="post">
             <!-- add spaces between each input -->
             <label for="name" class="form-labels">Name</label><br>
-            <input type="text" class="form-inputs" id="name" name="name" placeholder="Enter your name"><br>
+            <input type="text" class="form-inputs" id="name" name="name" placeholder="Enter your name" required><br>
             <label for="email" class="form-labels">Email</label><br>
-            <input type="text" class="form-inputs" id="email" name="email" placeholder="Enter your email"><br>
+            <input type="text" class="form-inputs" id="email" name="email" placeholder="Enter your email" required><br>
             <label for="lang" class="form-labels">What is your favorite coding language?</label><br>
-            <select name="lang" id="form-select" class="form-inputs" placeholder="Javascript">
+            <select name="lang" id="form-select" class="form-inputs" required>
               <option value="javascript">Javascript</option>
               <option value="ruby">Ruby</option>
               <option value="html">Html</option>
               <option value="css">Css</option>
             </select><br>
-            <input type="checkbox" id="info-check" name="info-check" value="info-check">
+            <input type="checkbox" id="info-check" name="info-check" value="info-check" required>
             <label for="info-check"> The information provided above is accurate</label><br>
-            <button type="button">Level Up</button>
+            <input type="submit" class="btn" value="Level Up">
           </form>
         </div>
       </div>
